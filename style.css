@@ -61,7 +61,7 @@ a {
     transition: .5s;
     z-index: var(--z-fixed);
     left: 0;
-    padding: 1rem 1rem 0 0;
+    padding: 1rem 0.9rem 0 0;
     align-items: center;
 }
 
@@ -118,6 +118,7 @@ a {
     background-color: rgb(59, 59, 59);
     color: white;
     padding-left: 2rem;
+    padding-top: 0.3rem;
     margin-top: 1rem;
     margin-left: 0.5rem;
 }
