@@ -88,6 +88,15 @@ a {
     margin: 0.5rem;
     max-width: 3rem;
 }
+ 
+.expanded_logo {
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    max-width: 12rem;
+    display: none;
+}
 
 .show {
     width: calc(var(--nav-width) + 156px)

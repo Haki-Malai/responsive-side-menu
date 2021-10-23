@@ -1,11 +1,13 @@
-function showNavbar(toggleId, navId, bodyId, headerId){
+function showNavbar(toggleId, navId, bodyId, headerId, logo){
 	const toggle = document.getElementById(toggleId),
 	nav = document.getElementById(navId),
 	bodypd = document.getElementById(bodyId),
-	headerpd = document.getElementById(headerId)
+	headerpd = document.getElementById(headerId),
+	lg = document.getElementById(logo)
+	exp_lg = document.getElementById('expanded_logo')
 
 	// Validate that all variables exist
-	if (toggle && nav && bodypd && headerpd){
+	if (toggle && nav && bodypd && headerpd && logo){
 		toggle.addEventListener('click', ()=>{
 			// show navbar
 			nav.classList.toggle('show')
@@ -15,11 +17,19 @@ function showNavbar(toggleId, navId, bodyId, headerId){
 			bodypd.classList.toggle('body-pd')
 			// add padding to header
 			headerpd.classList.toggle('body-pd')
+			// change logo
+			if (lg.style.display != "none"){
+				lg.style.display = "none"
+				exp_lg.style.display = "block"
+			} else{
+				lg.style.display = "block"
+				exp_lg.style.display = "none"
+			}
 		})
 	}
 }
 
-showNavbar('header-toggle','nav-bar','body-pd','header')
+showNavbar('header-toggle','nav-bar','body-pd','header', 'logo')
 
 /*===== LINK ACTIVE =====*/
 const linkColor = document.querySelectorAll('.nav_link')
