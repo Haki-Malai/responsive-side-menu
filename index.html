@@ -5,54 +5,107 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
 	<link rel="stylesheet" href="style.css">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </head>
 <body id="body-pd">
 	<header class="header" id="header">
-        <div class="header_toggle"> <i class='bx bx-menu' id="header-toggle"></i> </div>
+        <div class="header_toggle"> <i class='bi bi-list' id="header-toggle"></i> </div>
     </header>
     <div class="l-navbar" id="nav-bar">
+		<div class="nav_list">
+		</div>
 		<nav class="nav">
-			<div> 
-				<a href="#"> 
-					<i class='bx logo'>
-						<a href="#" class="exp_logo"></a>
-					</i> 
+			<div>
+				<a href="index.html">
+					<img src="./icons/logo.png" alt="logo" class="logo">
 				</a>
-                <div class="nav_list"> 
-					<a href="#" class="nav_link active"> 
-						<i class='bx bx-grid-alt nav_icon'></i> 
-						<span class="nav_name">Dashboard</span> 
-					</a> 
-					<a href="#" class="nav_link"> 
-						<i class='bx bx-user nav_icon'></i> 
-						<span class="nav_name">Users</span> 
-					</a> 
-					<a href="#" class="nav_link"> 
-						<i class='bx bx-message-square-detail nav_icon'></i> 
-						<span class="nav_name">Messages</span> 
-					</a> 
-					<a href="#" class="nav_link"> 
-						<i class='bx bx-bookmark nav_icon'></i> 
-						<span class="nav_name">Bookmark</span> 
-					</a> 
-					<a href="#" class="nav_link"> 
-						<i class='bx bx-folder nav_icon'></i>
-						<span class="nav_name">Files</span> 
+				<div class="nav_list">
+					<a href="#">
+						<img src="./icons/adm_logo.png" alt="logo" class="logo">
 					</a>
-					<a href="#" class="nav_link"> 
-						<i class='bx bx-bar-chart-alt-2 nav_icon'></i>
-						<span class="nav_name">Stats</span>
-					</a>
+					<div class="colored_div">
+						<a href="#" class="nav_link">
+							<i class="bi bi-speedometer nav_icon"></i>
+							<span class="nav_name">Πίνακας Ελένχου</span>
+						</a>
+					</div>
+					<div class="colored_div">
+						<a href="#" class="nav_link">
+							<i class="bi bi-building nav_icon"></i>
+							<span class="nav_name">Πολυκατοικίες</span>
+						</a>
+						<a href="#" class="nav_link">
+							<i class="bi bi-pencil-square nav_icon"></i>
+							<span class="nav_name">Στοιχεία Πολυκατοικίας</span>
+						</a>
+						<a href="#" class="nav_link">
+							<i class="bi bi-house-fill nav_icon"></i>
+							<span class="nav_name">Διαμερίσματα</span>
+						</a>
+						<a href="#" class="nav_link">
+							<i class="bi bi-grid-3x3 nav_icon"></i>
+							<span class="nav_name">Χιλιοστά</span>
+						</a>
+						<a href="#" class="nav_link">
+							<i class="bi bi-pencil-fill nav_icon"></i>
+							<span class="nav_name">Γρήγορη Επεξεργασία</span>
+						</a>
+
+					</div>
+					<div class="colored_div">
+						<a href="#" class="nav_link">
+							<i class="bi bi-cash nav_icon"></i>
+							<span class="nav_name">Δαπάνες</span>
+						</a>
+						<a href="#" class="nav_link">
+							<i class="bi bi-thermometer nav_icon"></i>
+							<span class="nav_name">Αυτόνομη Θέρμανση</span>
+						</a>
+						<a href="#" class="nav_link">
+							<i class="bi bi-cash nav_icon"></i>
+							<span class="nav_name">Οφειλές Διαμερισμάτων</span>
+						</a>
+						<a href="#" class="nav_link">
+							<i class="bi bi-clipboard-data nav_icon"></i>
+							<span class="nav_name">Ιστορικό Εκδόσεων</span>
+						</a>
+
+					</div>
+					<div class="colored_div">
+						<a href="#" class="nav_link">
+							<i class="bi bi-pie-chart-fill nav_icon"></i>
+							<span class="nav_name">Εκτύπωση Δαπανών</span>
+						</a>
+						<a href="#" class="nav_link">
+							<i class="bi bi-envelope-fill nav_icon"></i>
+							<span class="nav_name">Αποστολή Email/Sms</span>
+						</a>
+					</div>
+					<div class="colored_div">
+						<a href="#" class="nav_link">
+							<i class="bi bi-person-fill nav_icon"></i>
+							<span class="nav_name">Επαγγελματίες</span>
+						</a>
+						<a href="#" class="nav_link">
+							<i class="bi bi-calendar-date-fill nav_icon"></i>
+							<span class="nav_name">Ημερολόγειο</span>
+						</a>
+						<a href="#" class="nav_link">
+							<i class="bi bi-mailbox2 nav_icon"></i>
+							<span class="nav_name">Μηνύματα Κατοίκων</span>
+						</a>
+						<a href="#" class="nav_link">
+							<i class="bi bi-bar-chart-line-fill nav_icon"></i>
+							<span class="nav_name">Οικονομικά</span>
+						</a>
+
+					</div>
+
 				</div>
-            </div> 
-			<a href="#" class="nav_link"> 
-				<i class='bx bx-log-out nav_icon'></i> 
-				<span class="nav_name">SignOut</span> 
-			</a>
-        </nav>
+			</div>
+		</nav>
     </div>
     <!--Container Main start-->
     <div class="height-100 bg-light">

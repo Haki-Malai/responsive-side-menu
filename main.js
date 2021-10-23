@@ -1,4 +1,3 @@
-//https://bbbootstrap.com/snippets/bootstrap-5-sidebar-menu-toggle-button-34132202
 function showNavbar(toggleId, navId, bodyId, headerId){
 	const toggle = document.getElementById(toggleId),
 	nav = document.getElementById(navId),
