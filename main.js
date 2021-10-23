@@ -21,9 +21,11 @@ function showNavbar(toggleId, navId, bodyId, headerId, logo){
 			if (lg.style.display != "none"){
 				lg.style.display = "none"
 				exp_lg.style.display = "block"
+				$('.title').css('display','block')
 			} else{
 				lg.style.display = "block"
 				exp_lg.style.display = "none"
+				$('.title').css('display','none')
 			}
 		})
 	}
