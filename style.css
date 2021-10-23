@@ -9,6 +9,11 @@
     --z-fixed: 100
 }
 
+.l-navbar::-webkit-scrollbar,
+.nav::-webkit-scrollbar {
+    display: none;
+}
+
 body {
     position: relative;
     margin: var(--header-height) 0 0 0;
@@ -63,6 +68,11 @@ a {
     left: 0;
     padding: 1rem 0.9rem 0 0;
     align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }
 
 .nav {
@@ -70,7 +80,7 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    overflow: hidden
+    overflow-x: hidden
 }
 
 .nav_link {
