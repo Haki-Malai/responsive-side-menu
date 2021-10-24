@@ -78,7 +78,6 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    overflow-x: auto;
 }
 
 .nav_link {
@@ -136,6 +135,15 @@ a {
     margin: 0.5rem;
     margin-top: 0;
     align-items: center;
+    max-width: 13rem;
+}
+
+.short{
+    max-width: 3rem;
+}
+
+.invisible_text{
+    color: transparent;
 }
 
 .title{

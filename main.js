@@ -8,6 +8,8 @@ adm_lg = $('#adm_logo')
 title = $('.title')
 adm_lg_2 = $('#adm_logo_2')
 code_input = $('.code_input')
+containers = document.querySelectorAll('.container')
+links = document.querySelectorAll('.nav_name')
 
 toggle.click( ()=>{
 	// Show navbar
@@ -16,6 +18,11 @@ toggle.click( ()=>{
 	bodypd.toggleClass('body-pd')
 	// Add padding to header
 	headerpd.toggleClass('body-pd')
+	// Enlarge
+	containers.forEach((element) => { element.classList.remove('short')})
+	// Show letters
+	links.forEach((element) => {element.classList.remove('invisible_text')})
+
 	// Change logo
 	if (lg.css('display') != "none"){
 		lg.css('display','none')
@@ -31,6 +38,10 @@ toggle.click( ()=>{
 		code_input.css('display','none')
 		$('#submenu2').css('display','none')
 		$('#submenu3').css('display','none')
+		// Shorten
+		containers.forEach((element) => { element.classList.add('short')})
+		// Hide Letters
+		links.forEach((element) => {element.classList.add('invisible_text')})
 	}
 })
 
