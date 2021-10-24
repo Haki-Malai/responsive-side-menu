@@ -44,9 +44,3 @@ for (let i = 2; i <= 3; i++) {
 		}
 	})
 }
-
-$( '#nav-bar' ).scroll( ()=>{
-	console.log('asdas')
-	$('#submenu2').css('top', $('submenu2').parent('div').css('top'))
-	
-})
