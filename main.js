@@ -7,6 +7,7 @@ function showNavbar(toggleId, navId, bodyId, headerId, logo){
 	exp_lg = document.getElementById('expanded_logo')
 	adm_lg = document.getElementById('adm_logo')
 
+//	$('#submenu2').css('top', $('#dropdown2').offset().top + $('#submenu2').height())
 	// Validate that all variables exist
 	if (toggle && nav && bodypd && headerpd && logo){
 		toggle.addEventListener('click', ()=>{
@@ -50,3 +51,7 @@ function colorLink(){
 	}
 }
 linkColor.forEach(l => l.addEventListener('click', colorLink))
+
+
+	//$('#submenu2').css('top', $('#dropdown2').offset().top + $('#submenu2').height()*2)
+	//$('#submenu3').css('top', $('#dropdown3').offset().top + $('#submenu3').height()*2)

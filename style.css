@@ -78,7 +78,7 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    overflow-x: hidden;
+    overflow-x: auto;
 }
 
 .nav_link {
@@ -203,11 +203,17 @@ a {
     color: #0a58ca;
 }
 
-#submenu2{
-    display: none;
-
+.submenu{
+    display: inline;
+    color: white;
+    position: fixed;
+    min-height: 6rem;
+    padding: 0.5rem;
+    left: 14rem;
+    z-index: -5;
+    border: black 0.1rem solid;
+    display: block;
 }
 
 #dropdown2:hover ~ #submenu2{
-    display: block;
 }
