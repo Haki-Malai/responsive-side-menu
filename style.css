@@ -13,7 +13,7 @@
 
 body {
     color: white;
-    position: relative;
+    position: static;
     margin: var(--header-height) 0 0 0;
     font-family: var(--body-font);
     font-size: var(--normal-font-size);
@@ -36,7 +36,6 @@ a {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    z-index: var(--z-fixed);
     transition: .5s;
     height: calc(var(--header-height) + 1rem);
     padding: 0 2rem 0 calc(var(--nav-width) + 2rem);
@@ -62,18 +61,18 @@ a {
     height: 100vh;
     background-color: #203759;
     transition: .5s;
-    z-index: var(--z-fixed);
     left: 0;
     padding: 1rem 0.9rem 0 0;
     align-items: center;
     margin-left: auto;
     margin-right: auto;
-    overflow-y: scroll;
+    overflow: auto;
     -ms-overflow-style: none;
     scrollbar-width: none;
 }
 
 .nav {
+    position: static;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -212,12 +211,12 @@ a {
 }
 
 .submenu{
-    display: none;
     color: white;
+    display: none;
     position: fixed;
+    z-index: 10;
+    left: 14rem;
     min-height: 6rem;
     padding: 0.5rem;
-    left: 14rem;
-    z-index: -5;
     border: black 0.1rem solid;
 }
