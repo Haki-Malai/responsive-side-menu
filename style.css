@@ -90,7 +90,7 @@ a {
     padding: 0rem 0 .2rem .5rem
 }
  
-.logo, #adm_logo {
+.logo, #adm_logo , #adm_logo_2{
     background-size: contain;
     background-repeat: no-repeat;
     padding: 0.5rem;
@@ -98,9 +98,16 @@ a {
     max-height: 3rem;
 }
 
-#adm_logo {
+#adm_logo, #adm_logo_2 {
     margin: 0.5rem;
     background-color: #2e323e;
+    position: relative;
+    border-radius: 60%;
+}
+
+#adm_logo{
+    top: -3.5rem;
+    min-height: 4rem;
 }
  
 .logo {
@@ -155,15 +162,10 @@ a {
     top: -2.7rem;
     font-size: 0.8rem;
 }
-#adm_logo{
-    position: relative;
-    border-radius: 60%;
-    min-height: 4rem;
-    top: -3.5rem;
-}
 
-.bgg{
+.code_input{
     min-height: 8rem;
+    display: none;
 }
 
 .color1{

@@ -24,11 +24,15 @@ function showNavbar(toggleId, navId, bodyId, headerId, logo){
 				exp_lg.style.display = "block"
 				//adm_lg.style.display = "none"
 				$('.title').css('display','block')
+				$('#adm_logo_2').css('display','none')
+				$('.code_input').css('display','block')
 			} else{
 				lg.style.display = "block"
 				exp_lg.style.display = "none"
 				//adm_lg.style.display = "block"
 				$('.title').css('display','none')
+				$('#adm_logo_2').css('display','block')
+				$('.code_input').css('display','none')
 			}
 		})
 	}
