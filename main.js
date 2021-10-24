@@ -49,7 +49,7 @@ toggle.click( ()=>{
 for (let i = 2; i <= 3; i++) {
 	$("#dropdown"+i).click(() => {
 		if ($('#submenu'+i).css('display') === 'none'){
-			$('#submenu'+i).css('display','inline')
+			$('#submenu'+i).css('display','block')
 		} else{
 			$('#submenu'+i).css('display','none')
 		}
