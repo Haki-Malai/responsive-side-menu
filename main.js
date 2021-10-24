@@ -35,8 +35,8 @@ toggle.click( ()=>{
 })
 
 // To add more submenus, increase the loop, small error will be expected
-for (let i = 1; i++; i <= 4) {
-	document.getElementById("dropdown"+i).addEventListener("click", () => {
+for (let i = 2; i <= 3; i++) {
+	$("#dropdown"+i).click(() => {
 		if ($('#submenu'+i).css('display') === 'none'){
 			$('#submenu'+i).css('display','inline')
 		} else{
@@ -45,6 +45,8 @@ for (let i = 1; i++; i <= 4) {
 	})
 }
 
-nav.scroll( ()=>{
-
+$( '#nav-bar' ).scroll( ()=>{
+	console.log('asdas')
+	$('#submenu2').css('top', $('submenu2').parent('div').css('top'))
+	
 })
