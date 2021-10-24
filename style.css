@@ -78,7 +78,7 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    overflow-x: hidden
+    overflow-x: hidden;
 }
 
 .nav_link {
@@ -190,4 +190,24 @@ a {
 
 .color6{
     background-color: #1e212a;
+}
+
+.dropdown-toggle{
+    color: white;
+    margin-left: 2rem;
+    background-color: transparent;
+    border: transparent;
+}
+
+.dropdown-toggle:hover{
+    color: #0a58ca;
+}
+
+#submenu2{
+    display: none;
+
+}
+
+#dropdown2:hover ~ #submenu2{
+    display: block;
 }
