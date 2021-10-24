@@ -52,6 +52,15 @@ function colorLink(){
 }
 linkColor.forEach(l => l.addEventListener('click', colorLink))
 
+for (let i = 1; i++; i <= 3) {
+	document.getElementById("dropdown"+i).addEventListener("click", () => {
+		if ($('#submenu'+i).css('display') === 'none'){
+			$('#submenu'+i).css('display','inline')
+		} else{
+			$('#submenu'+i).css('display','none')
+		}
+	})
+}
 
 	//$('#submenu2').css('top', $('#dropdown2').offset().top + $('#submenu2').height()*2)
 	//$('#submenu3').css('top', $('#dropdown3').offset().top + $('#submenu3').height()*2)

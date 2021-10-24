@@ -204,7 +204,7 @@ a {
 }
 
 .submenu{
-    display: inline;
+    display: none;
     color: white;
     position: fixed;
     min-height: 6rem;
@@ -212,8 +212,4 @@ a {
     left: 14rem;
     z-index: -5;
     border: black 0.1rem solid;
-    display: block;
-}
-
-#dropdown2:hover ~ #submenu2{
 }
